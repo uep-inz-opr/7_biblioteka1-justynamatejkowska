@@ -28,3 +28,11 @@ class Library:
         for element in listasort:
             element1 = (element[0], element[1], element[2])
         print(element1)
+
+library=Library()
+k = int(input())
+for i in range(0, k):
+    wejscie = eval(input())
+    library.addEgzemplarz(wejscie)
+
+library.liczenie()
