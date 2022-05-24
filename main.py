@@ -23,11 +23,11 @@ class Library:
         for ksiazka in self.ksiazki:
             a = self.egzemplarze.count(ksiazka)
             ksiazka = [ksiazka[0], ksiazka[1], a]
-        listafinal.append(ksiazka)
-        listasort = sorted(listafinal, key=lambda x: x[0])
+            listafinal.append(ksiazka)
+            listasort = sorted(listafinal, key=lambda x: x[0])
         for element in listasort: 
-            element = (element[0], element[1], element[2])
-            print(element)
+            element1 = (element[0], element[1], element[2])
+            print(element1)
 
 library=Library()
 k = int(input())
